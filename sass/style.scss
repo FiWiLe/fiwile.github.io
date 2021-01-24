@@ -5,15 +5,10 @@
     max-width: 950px;
     margin: 0 auto;
 }
-.title {
-    font-weight: 600;
-    font-size: 30px;
-    color: #000;
-    line-height: 30px;
-    text-transform: uppercase;
-    text-align: center;
-}
+@import './blocks/titles';
 @import './blocks/promo';
 @import './blocks/header';
 @import './blocks/buttons';
 @import './blocks/advantages';
+@import './blocks/consultation';
+@import './blocks/forms';
