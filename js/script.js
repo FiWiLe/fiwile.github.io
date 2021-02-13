@@ -5,8 +5,8 @@ $(document).ready(function(){
         infinite: true,
         speed: 600,
         slidesToShow: 1,
-        prevArrow: '<button type="button" class="slick-prev"><img src="../icons/arrow__left.png"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="../icons/arrow__right.png"></button>',
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrow__left.png"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow__right.png"></button>',
     });
 
     //Tabs
@@ -72,4 +72,21 @@ $(document).ready(function(){
     //Phone mask
 
     $('input[name=phone]').mask("+7 (999) 999-99-99");
+
+    // PHP
+
+    $('form').submit(function(e){
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function(){
+            $(this).find("input").val("");
+
+
+            $('form').trigger('reset');
+        });
+        return false;
+    });
   });
