@@ -16,6 +16,12 @@
         width: 75px;
         height: 75px;
     }
+    &__icon_animated {
+        animation: heartbeat 1.5s ease infinite paused;
+        &:hover {
+            animation-play-state: running;
+        }
+    }
     &__title {
         margin-top: 40px;
         font-weight: 600;
