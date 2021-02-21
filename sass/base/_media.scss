@@ -1,47 +1,45 @@
-@media (max-width: 991px) {
+@media (max-width: 1200px){
+    .container {
+        max-width: 900px;
+    }
     .header {
         &__logo {
             width: 200px;
         }
-        &__official {
-            font-size: 10px;
-            span {
-                font-size: 16px;
-            }
-        }
-        &__phone {
+        &__official span {
             font-size: 16px;
         }
     }
     .promo {
+        min-height: 600px;
         &__header {
-            font-size: 40px;
+            font-size: 38px;
+            line-height: 38px;
         }
         &__subheader {
             font-size: 22px;
+            line-height: 22px;
         }
     }
     .consultation {
-        .title_left {
-            font-size: 32px;
+        min-height: 630px;
+        padding: 80px 0 72px 0;
+        .title {
+            font-size: 30px;
         }
         &__descr {
             font-size: 18px;
         }
-        .feed-form {
-            width: 250px;
-            input {
-                height: 40px;
-            }
-        }
-        .button_submit {
-            height: 45px;
-            font-size: 14px;
-        }
     }
     .carousel {
         &__inner {
-            width: 600px;
+            width: 650px;
+        }
+        .slick-prev, .slick-next {
+            img {
+                width: 26px;
+                height: 45px;
+            }
         }
     }
     .catalog {
@@ -53,44 +51,47 @@
         &__content {
             justify-content: space-around;
         }
-        &__item {
-            width: 350px;
-        }
     }
     .reviews {
         &-item {
-            padding: 0 50px;
-            justify-content: center;
-            align-items: center;
             &__img {
-                height: 100px;
-                width: 100px;
-            }
-            &__name {
-                font-size: 16px;
-            }
-            &__sub {
-                font-size: 12px;
-            }
-            &__descr {
-                font-size: 14px;
+                margin-right: 50px;
+                width: 150px;
+                height: 150px;
             }
         }
     }
     .footer {
-        height: 300px;
+        min-height: 300px;
         &__info {
-            width: 400px;
-            height: 200px;
-            padding: 40px 60px 50px 60px;
+            width: 420px;
+            height: 230px;
+            padding: 35px 60px 50px 60px;
         }
         &__addr {
             margin-bottom: 25px;
             font-size: 16px;
             line-height: 16px;
         }
-        &__phone {
-            margin-bottom: 30px;
+        &__social-item {
+            width: 45px;
+            height: 45px;
+            img {
+                height: 24px;
+            }
         }
     }
+}
+@media (max-width: 991px){
+    .container {
+        max-width: 750px;
+    }
+}
+@media (max-width: 767px){
+    .container {
+        max-width: none;
+    }
+}
+@media (max-width: 575px){
+    
 }
