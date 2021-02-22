@@ -105,9 +105,9 @@ $(document).ready(function(){
 
     $(window).scroll(function(){
         if ($(this).scrollTop() > 1600) {
-            $('.pageup').fadeIn();
+            $('.pageup_header').fadeIn();
         } else {
-            $('.pageup').fadeOut();
+            $('.pageup_header').fadeOut();
         }
     });
 
