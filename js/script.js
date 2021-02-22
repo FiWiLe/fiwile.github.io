@@ -7,6 +7,17 @@ $(document).ready(function(){
         slidesToShow: 1,
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrow__left.png"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow__right.png"></button>',
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    arrows: false,
+                    dots: true,
+                    autoplay: true,
+                    autoplaySpeed: 5000,
+                }
+            },
+        ]
     });
 
     //Tabs
