@@ -622,3 +622,23 @@
         }
     }
 }
+@media screen and (max-width: 575px) and (orientation: landscape) {
+    .modal {
+        min-height: 300px;
+        width: 500px;
+        padding: 5px 15px 5px 15px;
+        label.error {
+            margin-bottom: 5px;
+        }
+        .feed-form {
+            margin-top: 15px;
+            input {
+                height: 38px;
+                margin-bottom: 10px;
+            }
+        }
+        .button_submit {
+            height: 40px;
+        }
+    }
+}
