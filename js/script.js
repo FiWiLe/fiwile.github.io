@@ -105,15 +105,19 @@ $(document).ready(function(){
 
     $(window).scroll(function(){
         if ($(this).scrollTop() > 1600) {
-            $('.pageup_header').fadeIn();
+            $('.pageup').fadeIn();
         } else {
-            $('.pageup_header').fadeOut();
+            $('.pageup').fadeOut();
         }
     });
 
-    $("a[href^='#']").click(function(){
+    $("a[href=#up]").click(function(){
         const _href = $(this).attr("href");
         $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
         return false;
     });
+
+    // WOW.js
+
+    new WOW().init();
   });
